@@ -1,0 +1,35 @@
+.cursor{
+	height: 54px;
+	width: 54px;
+	position: fixed;
+	border: #ACACAC 1.5px solid;
+	border-radius: 100%;
+
+	pointer-events: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	top: -27px;
+	left: -27px;
+	z-index: 1000;
+	transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1)
+}
+.cursor--focused{
+	height: 90px;
+	width: 90px;
+	top: -45px;
+	left: -45px;
+}
+body {
+  cursor: url('black-circle.90c18c07.svg') 2 2, pointer;
+}
+a, .link-cursor, button {
+  cursor: none;
+}
+
+@media only screen and (max-width: 576px) {
+	.cursor{
+		display: none;
+	}
+}
